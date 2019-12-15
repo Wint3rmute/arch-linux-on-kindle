@@ -24,5 +24,5 @@
 
 ## Installation
 * Extract the system (preferably into `mnt/base-us/documents/arch`, but the choice is yours)
-* Copy [this script](archlinux) into your ebook (optionally add it to your PATH)
+* Copy [this script](archlinux.sh) into your ebook (optionally add it to your PATH)
 * Run the script
