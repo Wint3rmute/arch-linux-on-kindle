@@ -26,3 +26,9 @@
 * Extract the system (preferably into `mnt/base-us/documents/arch`, but the choice is yours)
 * Copy [this script](archlinux.sh) into your ebook (optionally add it to your PATH)
 * Run the script
+
+## Post-install
+* [Fix the keyring](https://unix.stackexchange.com/questions/450119/pacman-cannot-install-arch-linux-keyring-on-arch-linux-arm) (`pacman` won't work otherwise):
+    * `pacman-key -u`
+    * `pacman-key --populate`
+    
