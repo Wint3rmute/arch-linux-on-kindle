@@ -1,0 +1,30 @@
+# /etc/fstab: static file system information.
+#
+# <file system>   <mount pt>    <type> <options>                                         <dump>  <pass>
+/dev/mmcblk0p1    /             ext3   suid,exec,auto,nouser,async,rw,noatime,nodiratime 0      1
+proc              /proc         proc   defaults                                          0      0
+sysfs             /sys          sysfs  defaults                                          0      0
+devpts            /dev/pts      devpts defaults,gid=5,mode=620                           0      0
+usbfs             /proc/bus/usb usbfs  defaults                                          0      0
+/dev/mmcblk0p4    /mnt/base-us  ext3   defaults,noatime,nodiratime               0      0
+/dev/mmcblk1p1    /mnt/base-mmc vfat   defaults,noatime,nodiratime,utf8,noexec,shortname=mixed              0      0
+fsp#/mnt/base-us  /mnt/us       fuse   allow_other,umask=0,uid=0,gid=0,rw,max_write=65536,max_readahead=65536,noatime,noexec,nosuid,nodev,nonempty     0      0
+fsp#/mnt/base-mmc /mnt/mmc      fuse   rw,max_write=65536,max_readahead=65536,noatime,exec,nosuid,nodev,nonempty     0      0
+[root@kindle root]# mkfx.ex
+[root@kindle root]# mkfs.ext
+mkfs.ext2     mkfs.ext3     mkfs.ext4     mkfs.ext4dev
+[root@kindle root]# mkfs.ext
+[root@kindle root]#
+[root@kindle root]# cat /etc/fstab
+# /etc/fstab: static file system information.
+#
+# <file system>   <mount pt>    <type> <options>                                         <dump>  <pass>
+/dev/mmcblk0p1    /             ext3   suid,exec,auto,nouser,async,rw,noatime,nodiratime 0      1
+proc              /proc         proc   defaults                                          0      0
+sysfs             /sys          sysfs  defaults                                          0      0
+devpts            /dev/pts      devpts defaults,gid=5,mode=620                           0      0
+usbfs             /proc/bus/usb usbfs  defaults                                          0      0
+/dev/mmcblk0p4    /mnt/base-us  ext3   defaults,noatime,nodiratime               0      0
+/dev/mmcblk1p1    /mnt/base-mmc vfat   defaults,noatime,nodiratime,utf8,noexec,shortname=mixed              0      0
+fsp#/mnt/base-us  /mnt/us       fuse   allow_other,umask=0,uid=0,gid=0,rw,max_write=65536,max_readahead=65536,noatime,noexec,nosuid,nodev,nonempty     0      0
+fsp#/mnt/base-mmc /mnt/mmc      fuse   rw,max_write=65536,max_readahead=65536,noatime,exec,nosuid,nodev,nonempty     0      0
