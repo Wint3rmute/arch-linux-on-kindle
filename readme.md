@@ -1,6 +1,10 @@
 # Arch Linux on your Kindle
 (Yup, I was bored)
 
+# Proof
+![Proof](proof.jpg)
+[More images](https://imgur.com/a/8PgtJt4)
+
 **Warning: this "mod" breaks the USB file transfer - but you can use `scp` to transfer ebooks via WiFi (which i find even better)**.
 
 # Instruction
