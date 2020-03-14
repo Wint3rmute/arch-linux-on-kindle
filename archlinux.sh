@@ -4,7 +4,9 @@
 # refer to `proot --help` to get more info
 # on mounting options
 
-proot -k 4 -r /mnt/base-us/documents/arch \
+# Edit the directory below if you've 
+# extracted the system elsewhere!!
+proot -k 4 -r /mnt/base-us/arch \
   -b /etc/host.conf \
   -b /etc/hosts \
   -b /etc/hosts.equiv \
