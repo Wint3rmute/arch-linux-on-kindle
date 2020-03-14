@@ -32,7 +32,7 @@
 # ICMP. Allow only responses to local connections
 -A INPUT -p icmp -m state --state RELATED,ESTABLISHED -j ACCEPT
 
-# The line from the tutorial guy
+# The line from the Arch tutorial you have to append
 -A INPUT -i wlan0 -j ACCEPT
 COMMIT
 ```
@@ -40,7 +40,7 @@ COMMIT
 ## Installation
 * Extract the system (preferably into `/mnt/base-us/arch`, but the choice is yours. Be careful not to extract the system to `/mnt/base-us/documents` as it will make your kindle try to index the system files as ebooks)
 * Copy [this script](archlinux.sh) into your ebook (optionally add it to your PATH)
-* Run the script
+* Run the script (change the proot directory in the script, if you've extracted the system to a custom location)
 
 ## Post-install
 * [Fix the keyring](https://unix.stackexchange.com/questions/450119/pacman-cannot-install-arch-linux-keyring-on-arch-linux-arm) (`pacman` won't work otherwise):
