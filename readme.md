@@ -1,7 +1,6 @@
 # Arch Linux on your Kindle
-(Yup, I was bored)
 
-# Proof
+Proof
 ![Proof](proof.jpg)
 [More images](https://imgur.com/a/8PgtJt4)
 
