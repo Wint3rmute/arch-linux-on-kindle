@@ -38,7 +38,7 @@ COMMIT
 ```
 
 ## Installation
-* Extract the system (preferably into `mnt/base-us/documents/arch`, but the choice is yours)
+* Extract the system (preferably into `/mnt/base-us/arch`, but the choice is yours. Be careful not to extract the system to `/mnt/base-us/documents` as it will make your kindle try to index the system files as ebooks)
 * Copy [this script](archlinux.sh) into your ebook (optionally add it to your PATH)
 * Run the script
 
